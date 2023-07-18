@@ -67,7 +67,6 @@
   width: 100px;
 }
 
-
 /* input */
 .input-field {
   display: flex;
@@ -146,6 +145,22 @@ ul li.checked::before {
   background-image: url(media/checked.png);
 }
 
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  color: #9f9b9a;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background-color: #edeef0;
+}
 
 /* footer */
 footer > .signature {
@@ -154,7 +169,6 @@ footer > .signature {
   color: #ec8e81;
   margin-top: 20px; 
   text-align: center;
-  
 }
 
 footer .signature-link {
