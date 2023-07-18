@@ -4,22 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>To-do app</title>
-  </head>
-  <body>
-    <h1>To-do list app</h1>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://kit.fontawesome.com/06beaafd16.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./media/checked.png">
+    <title>Daily To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="todo-wrapper">
+
+        <header class="header">
+          <div class="header-text">
+          <h2>Daily To-Do List</h2>
+          <span class="task-counter" id="taskCounter">2 tasks pending</span>
+          <span class="date" id="date">Tue 18th, 2023</span>
+          <span class="time" id="time">18:34:56</span>
+          </div>
+          <div class="header-icon">
+            <img src="./media/icon.png" alt="icon">
+          </div>
+        </header>
+
+
+
+        
+       
+          <div class="input-field">
+          <input type="text" placeholder="Add your note" id="inputBox">
+          <button>+</button>
+        </div>
+
+         <main>
+        <ul id="list-container">
+          <!-- <li class="checked">Buy apples</li>
+          <li>Buy oranges</li>
+          <li>Buy honey</li> -->
+          
+        </ul>
+        </main>
+
+        <footer>
+          <div class="signature">Created by <a class="signature-link" target="_blank" href="https://github.com/demitraps">demitraps</a>, 2023</div>
+        </footer>
+        
+
+
+
+
+        
+      </div>
+
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
